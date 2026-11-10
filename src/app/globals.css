@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: var(--font-lora), ui-serif, Georgia, "Times New Roman", serif;
+
+  /* Papel y tinta */
+  --color-paper: #faf8f4;
+  --color-ink: #132434;
+
+  /* Azul institucional (Lund) */
+  --color-navy-50: #f1f5f9;
+  --color-navy-100: #dee7f1;
+  --color-navy-200: #c2d3e6;
+  --color-navy-300: #93b0cd;
+  --color-navy-400: #5e85ac;
+  --color-navy-500: #3a6489;
+  --color-navy-600: #2a4e6e;
+  --color-navy-700: #1e3f5c;
+  --color-navy-800: #16324a;
+  --color-navy-900: #0f2438;
+  --color-navy-950: #081827;
+
+  /* Bronce / cobre */
+  --color-bronze-50: #fbf5ee;
+  --color-bronze-100: #f4e6d5;
+  --color-bronze-200: #e7caa8;
+  --color-bronze-300: #d6a97c;
+  --color-bronze-400: #c28c5a;
+  --color-bronze-500: #ab7443;
+  --color-bronze-600: #8d5c35;
+  --color-bronze-700: #71482b;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-bronze-200);
+    color: var(--color-navy-900);
+  }
+}
+
+/* Patrón sutil del hero: líneas de "papel académico" */
+@utility hero-grid {
+  background-image:
+    linear-gradient(to right, rgba(15, 36, 56, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 36, 56, 0.045) 1px, transparent 1px);
+  background-size: 32px 32px;
+  -webkit-mask-image: radial-gradient(ellipse at 70% 0%, black 10%, transparent 70%);
+  mask-image: radial-gradient(ellipse at 70% 0%, black 10%, transparent 70%);
+}
+
+@utility card-shadow {
+  box-shadow: 0 1px 2px rgba(15, 36, 56, 0.04);
+}
