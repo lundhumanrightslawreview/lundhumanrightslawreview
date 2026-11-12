@@ -10,7 +10,7 @@ export function Footer() {
           <p className="font-serif text-lg text-navy-900">{SITE.name}</p>
           <p className="mt-3 max-w-sm text-sm leading-relaxed text-stone-500">
             A decentralised platform from the {SITE.programme} at {SITE.university}.
-            We publish essays graded AB and referenced in OSCOLA so that the
+            We publish articles graded AB and referenced in OSCOLA so that the
             knowledge circulates.
           </p>
           <p className="mt-4 text-xs text-stone-400">
