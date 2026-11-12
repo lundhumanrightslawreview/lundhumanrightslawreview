@@ -17,6 +17,20 @@ export function Footer() {
             An independent, student-run project. Not an official publication of
             Lund University.
           </p>
+          {/* CC LICENSE ADDED HERE */}
+          <div className="mt-4 max-w-sm rounded bg-stone-50 p-3 text-xs leading-relaxed text-stone-500 border border-stone-100">
+            <p>
+              <strong>Open Access:</strong> All articles published on this platform are distributed under a{" "}
+              <a 
+                href="https://creativecommons.org/licenses/by-nc/4.0/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="underline hover:text-navy-900"
+              >
+                Creative Commons Attribution-NonCommercial 4.0 International License
+              </a>.
+            </p>
+          </div>
         </div>
 
         <div>
