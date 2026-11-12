@@ -107,7 +107,7 @@ export default async function HomePage({
             </h1>
 
             <p className="mt-4 max-w-2xl text-lg leading-relaxed text-stone-600 sm:text-xl">
-              An open, decentralised review: the essays from Lund's Master's Programme in
+              An open, decentralised review: the articles from Lund's Master's Programme in
               International Human Rights Law, graded AB (passed with distinction) and cited 
               in OSCOLA, available to anyone. The only gatekeeper is academic excellence.
             </p>
