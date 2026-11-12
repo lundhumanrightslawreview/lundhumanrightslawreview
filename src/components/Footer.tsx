@@ -58,36 +58,13 @@ export function Footer() {
                 Sign in with @student.lu.se
               </Link>
             </li>
-          </ul>
-        </div>
-
-        <div>
-          <p className="text-xs font-semibold tracking-[0.14em] text-stone-400 uppercase">
-            Subjects
-          </p>
-          <ul className="mt-3 space-y-2 text-sm text-stone-600">
-            {CATEGORIES.slice(0, 5).map((category) => (
-              <li key={category.slug}>
-                <Link
-                  href={`/?categoria=${category.slug}`}
-                  className="hover:text-navy-900 hover:underline"
-                >
-                  {category.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      <div className="border-t border-stone-100">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-5 text-xs text-stone-400 sm:flex-row sm:items-center sm:justify-between">
-          <p>
-            © {new Date().getFullYear()} {SITE.name}
-          </p>
-          <p>Built by students, for students.</p>
-        </div>
-      </div>
-    </footer>
-  );
-}
+            {/* LINK A GITHUB AGREGADO AQUÍ */}
+            <li className="pt-2">
+              <a 
+                href="https://github.com/lundhumanrightslawreview/lundhumanrightslawreview" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-1.5 text-stone-500 hover:text-navy-900 hover:underline"
+              >
+                <svg viewBox="0 0 24 24" className="size-4 fill-current" aria-hidden="true">
+                  <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.
