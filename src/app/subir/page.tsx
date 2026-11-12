@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { MailX } from "lucide-react";
+import { MailX, Info } from "lucide-react";
 import { UploadForm } from "@/components/UploadForm";
 import { getCurrentProfile } from "@/lib/auth";
 import { displayName, isAllowedEmail } from "@/lib/utils";
@@ -64,6 +64,27 @@ export default async function UploadPage() {
           email. Your name is taken from the Google account you signed in with.
         </p>
       </header>
+
+      {/* OPEN ACCESS NOTICE ADDED HERE */}
+      <div className="mt-6 flex items-start gap-3 rounded-lg border border-blue-100 bg-blue-50/50 p-4 text-sm text-blue-900">
+        <Info className="mt-0.5 size-5 shrink-0 text-blue-600" aria-hidden />
+        <div>
+          <p className="font-semibold text-blue-950">Open Access Publishing (CC BY-NC 4.0)</p>
+          <p className="mt-1 leading-relaxed text-blue-800">
+            By publishing on this platform, you retain full copyright of your work while agreeing to distribute it under a{" "}
+            <a 
+              href="https://creativecommons.org/licenses/by-nc/4.0/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="font-medium underline decoration-blue-300 underline-offset-2 hover:text-blue-950"
+            >
+              Creative Commons Attribution-NonCommercial 4.0 International License
+            </a>. 
+            This ensures your peers can freely read, share, and cite your work, while strictly prohibiting anyone from using it for commercial purposes.
+          </p>
+        </div>
+      </div>
+      {/* END OF NOTICE */}
 
       <div className="mt-8">
         <UploadForm authorName={displayName(profile)} />
