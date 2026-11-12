@@ -8,7 +8,7 @@ export const SITE = {
   name: "Lund Human Rights Law Review",
   shortName: "LHRLR",
   university: "Lund University",
-  programme: "Master's Programme in Human Rights",
+  programme: "Master's Programme in International Human Rights Law",
   tagline: "Master's essays, in the open.",
   description:
     "A student-run academic repository from the Lund University Master's Programme in Human Rights: essays graded AB and referenced in OSCOLA.",
